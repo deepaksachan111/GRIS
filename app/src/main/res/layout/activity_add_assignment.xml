@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lko.my.gris.Faculty.AddAssignmentActivity">
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:textColor="@android:color/holo_red_dark"
+           android:text="Course"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:id="@+id/edt_course_add_assignment"
+           android:padding="10dp"
+           android:background="@drawable/edit_layout_bg"
+           android:layout_marginTop="20dp"
+           android:layout_margin="30dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <TextView
+
+           android:textColor="@android:color/holo_red_dark"
+           android:text="Date"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:id="@+id/edt_date_add_assignment"
+           android:padding="10dp"
+           android:background="@drawable/edit_layout_bg"
+           android:layout_marginTop="20dp"
+           android:layout_margin="30dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:textColor="@android:color/holo_red_dark"
+           android:text="File"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:id="@+id/edt_select_image"
+           android:editable="false"
+           android:focusable="false"
+           android:drawableRight="@android:drawable/ic_menu_add"
+           android:padding="5dp"
+           android:background="@drawable/edit_layout_bg"
+           android:layout_marginTop="20dp"
+           android:layout_margin="30dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+
+       <Button
+           android:id="@+id/btn_save_addassignment"
+           android:text="Save"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+
+       <ImageView
+           android:id="@+id/selected_pix"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+</RelativeLayout>

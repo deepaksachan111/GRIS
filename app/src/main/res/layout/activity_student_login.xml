@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:background="#20272F"
+    tools:context="com.lko.my.gris.Student.StudentLoginActivity">
+
+    <!-- Login progress -->
+    <TextView
+        android:layout_margin="20dp"
+        android:textSize="24dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Student Login"
+        android:id="@+id/login_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <AutoCompleteTextView
+                android:padding="10dp"
+                android:background="@drawable/edit_layout_bg"
+                android:layout_marginTop="30dp"
+                android:id="@+id/edt_stu_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_layout_bg"
+                android:id="@+id/edt_stu_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:textColor="#fff"
+                android:background="#1264BA"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_studentlogin"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+
+            <Button
+
+                android:textColor="#fff"
+                android:background="#1264BA"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_new_student"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New User"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
